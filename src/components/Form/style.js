@@ -4,14 +4,12 @@ import { StyleSheet } from "react-native"
 
 export default StyleSheet.create({
     formContext: {
-        width: "100%",
-        height: "100%",
-        bottom: 0,
+        flex:1,
         backgroundColor: "#fff",
         alignItems: "center",
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
-        marginTop: 30,
+        paddingTop: 30,
     },
     form: {
         width: "100%",
@@ -34,17 +32,25 @@ export default StyleSheet.create({
     },
     buttonCalculator: {
         borderRadius: 50,
-        width: "90%",
         alignItems: "center",
         justifyContent: "center",
         backgroundColor: "#ff0043",
         paddingTop: 14,
         paddingBottom: 14,
-        marginLeft: 12,
         marginTop: 30
     },
     textButtonCalculator: {
         fontSize: 20,
         color: "#fff"
+    },
+    errorMessage: {
+        fontSize: 12,
+        color: "#ff0043",
+        fontWeight: "bold",
+        paddingLeft: 20
+    },
+    exibitionResultImc: {
+        width: "100%",
+        height: "50%"
     }
 })
